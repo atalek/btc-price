@@ -12,5 +12,5 @@ function startScheduler() {
     .run(() => {
       cacheData()
     })
-    .everyHours(6)
+    .everySixHours()
 }
