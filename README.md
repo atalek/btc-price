@@ -25,6 +25,8 @@ and Turso SQLite DB to cache initial results every 6 hours.
 
 ## Live Version
 
+[https://btc-price-five.vercel.app/](https://btc-price-five.vercel.app/)
+
 ## Author
 
 Github: [@Amphei](https://github.com/Amphei) <br> Linkedin:
