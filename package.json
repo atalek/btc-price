@@ -12,13 +12,13 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "latest",
+    "@types/lodash.debounce": "^4.0.9",
     "nuxt": "^3.8.1",
-    "nuxt-lodash": "^2.5.3",
-    "nuxt-scheduler": "^0.1.9",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@libsql/client": "^0.3.6"
+    "@libsql/client": "^0.3.6",
+    "lodash.debounce": "^4.0.8"
   }
 }

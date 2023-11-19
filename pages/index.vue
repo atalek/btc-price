@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import debounce from 'lodash.debounce'
+
 export type Results = {
   id: number
   provider: string
@@ -17,7 +19,7 @@ if (cachedResults) {
   isLoading.value = false
 }
 
-const debouncedUseOffers = useDebounce(async (amount: string) => {
+const debouncedUseOffers = debounce(async (amount: string) => {
   const results = await useOffers(amount)
   offerResults.value = results
   isLoading.value = false
