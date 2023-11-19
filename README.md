@@ -9,7 +9,7 @@ and Turso SQLite DB to cache initial results.
 
 - Search for BTC prices in euros
 - Displays the top four offerings from various providers
-- Caches initial results every 6 hours for enhanced performance
+- Caches initial results for enhanced performance
 
 ## Technologies
 
