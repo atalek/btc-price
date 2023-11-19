@@ -29,5 +29,5 @@ export default defineEventHandler(async event => {
       statusMessage: 'Problem fetching data',
     })
   }
-  return 'cached'
+  return 'data cached'
 })
