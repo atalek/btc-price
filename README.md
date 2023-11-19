@@ -3,7 +3,7 @@
 This simple project allows you to search for the best BTC prices in euros.
 Simply enter an amount in euros, and the project will return the four best
 offerings from various providers. The project is built with Nuxt3, Tailwind CSS,
-and Turso SQLite DB to cache initial results every 6 hours.
+and Turso SQLite DB to cache initial results.
 
 ## Features
 
