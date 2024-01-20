@@ -25,9 +25,53 @@ and Turso SQLite DB to cache initial results.
 2. The project will automatically display the top four offerings from various
    providers.
 
+## Setup
+
+1. **Clone the repository.**
+
+   ```bash
+   git clone https://github.com/Amphei/btc-price.git
+
+   ```
+
+2. **Navigate to the project directory.**
+
+   ```bash
+   cd btc-price
+
+   ```
+
+3. **Install dependencies.**
+
+   ```bash
+   npm install
+
+   ```
+
+4. **Configure environment variables.**
+
+   - Create a `.env` file in the root of the project.
+   - Add the necessary environment variables for your Turso db.
+
+     ```env
+     #Turso
+     TURSO_DB_URL=your_turso_db_url
+     TURSO_DB_TOKEN=your_turso_auth_token
+     ```
+
+5. **Run the development server.**
+
+   ```bash
+   npm run dev
+
+   ```
+
+6. **Open your browser and visit http://localhost:3000 to view the Bitcoin price
+   checker.**
+
 ## Live Version
 
-[https://btc-price-five.vercel.app/](https://btc-price-five.vercel.app/)
+[https://btc-price.pages.dev/](https://btc-price.pages.dev/)
 
 ## Author
 
