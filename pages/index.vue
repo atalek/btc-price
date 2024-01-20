@@ -5,7 +5,9 @@ export type Results = {
   id: number
   provider: string
   btc: string
+  updatedAt: string
 }
+
 const btcPrice = await useBtcPrice()
 
 const defaultAmount = '100'
@@ -52,10 +54,11 @@ watch(
     }
   },
 )
-
-await callOnce(async () => {
-  $fetch('/api/cachedata')
-})
+if (!cachedResults?.value) {
+  await callOnce(async () => {
+    $fetch('/api/cachedata')
+  })
+}
 </script>
 
 <template>

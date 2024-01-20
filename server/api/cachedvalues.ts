@@ -7,12 +7,16 @@ export default defineEventHandler(async () => {
       .select()
       .from(tables.cachedPrices)
       .orderBy(desc(tables.cachedPrices.btc))
+    let transformedResults
 
-    const transformedResults = cachedResults.map(row => ({
-      id: row.id,
-      provider: row.provider,
-      btc: row.btc,
-    }))
+    if (cachedResults) {
+      transformedResults = cachedResults.map(row => ({
+        id: row.id,
+        provider: row.provider,
+        btc: row.btc,
+        updatedAt: row.updatedAt,
+      }))
+    }
 
     return transformedResults
   } catch (error) {
