@@ -13,7 +13,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "@types/lodash.debounce": "^4.0.9",
-    "nuxt": "^3.8.1",
+    "nuxt": "^3.9.3",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },

@@ -1,5 +1,7 @@
 # Bitcoin Price Checker
 
+![Landing page](https://res.cloudinary.com/dkofkuquf/image/upload/v1705710748/nuxtshop/ahvofnnfwjtooptlxamk.png)
+
 This simple project allows you to search for the best BTC prices in euros.
 Simply enter an amount in euros, and the project will return the four best
 offerings from various providers. The project is built with Nuxt3, Tailwind CSS,
