@@ -1,8 +1,0 @@
-{
-  "crons": [
-    {
-      "path": "/api/cachedata.ts",
-      "schedule": "0 0 * * *"
-    }
-  ]
-}

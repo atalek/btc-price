@@ -3,13 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
 
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'en',
-      },
-    },
-  },
   nitro: {
     prerender: {
       autoSubfolderIndex: false,

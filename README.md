@@ -56,12 +56,13 @@ and Turso SQLite DB to cache initial results.
   ```env
    #Turso
    TURSO_DB_URL=your_turso_db_url
-   TURSO_DB_TOKEN=your_turso_auth_token
+   TURSO_AUTHTOKEN=your_turso_auth_token
   ```
 
-5. **Run the development server.**
+5. **Run the migration and development server.**
 
    ```bash
+   npm run db-push
    npm run dev
 
    ```

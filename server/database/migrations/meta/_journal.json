@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1705764862661,
+      "tag": "0000_motionless_secret_warriors",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1705768181233,
+      "tag": "0001_brave_squadron_supreme",
+      "breakpoints": true
+    }
+  ]
+}

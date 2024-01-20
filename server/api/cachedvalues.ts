@@ -1,17 +1,18 @@
-import { client } from '../db/dbClient'
+import { desc } from 'drizzle-orm'
+import { db } from '~/server/utils/db'
 
 export default defineEventHandler(async () => {
   try {
-    const cachedValues = await client.execute({
-      sql: 'select * from cached_prices order by btc desc',
-      args: {},
-    })
-    const transformedResults = cachedValues?.rows.map(row => {
-      const id = row[0]
-      const provider = row[1]
-      const btc = row[2]
-      return { id, provider, btc }
-    })
+    const cachedResults = await db()
+      .select()
+      .from(tables.cachedPrices)
+      .orderBy(desc(tables.cachedPrices.btc))
+
+    const transformedResults = cachedResults.map(row => ({
+      id: row.id,
+      provider: row.provider,
+      btc: row.btc,
+    }))
 
     return transformedResults
   } catch (error) {

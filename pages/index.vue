@@ -50,15 +50,18 @@ watch(
       isLoading.value = true
       await debouncedUseOffers(newValue)
     }
-  }
+  },
 )
+
+await callOnce(async () => {
+  $fetch('/api/cachedata')
+})
 </script>
 
 <template>
   <main class="max-w-2xl mx-auto px-4 py-8">
     <h1
-      class="uppercase text-5xl text-center font-bold bg-gradient-to-br from-green-400 to-cyan-400 bg-clip-text text-transparent from-30%"
-    >
+      class="uppercase text-5xl text-center font-bold bg-gradient-to-br from-green-400 to-cyan-400 bg-clip-text text-transparent from-30%">
       Find the cheapest BTC
     </h1>
     <h2 class="text-xl font-bold text-center my-6">
@@ -67,14 +70,12 @@ watch(
 
     <div class="flex justify-center mt-6">
       <div
-        class="flex items-center bg-blue-950 border border-white/10 rounded-lg"
-      >
+        class="flex items-center bg-blue-950 border border-white/10 rounded-lg">
         <input
           type="text"
           class="border-white/10 bg-blue-950 p-2 border-0 w-36 pl-4 bg-transparent text-2xl outline-none"
           v-model="amount"
-          placeholder="amount"
-        />
+          placeholder="amount" />
         <span class="text-white/50 px-4">EUR</span>
       </div>
     </div>
@@ -85,8 +86,7 @@ watch(
         :key="result.btc"
         :providerName="result.provider"
         :btc="result.btc"
-        :loading="isLoading"
-      />
+        :loading="isLoading" />
 
       <LoadingSkeleton v-else />
     </div>
