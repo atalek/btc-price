@@ -50,14 +50,14 @@ and Turso SQLite DB to cache initial results.
 
 4. **Configure environment variables.**
 
-   - Create a `.env` file in the root of the project.
-   - Add the necessary environment variables for your Turso db.
+- Create a `.env` file in the root of the project.
+- Add the necessary environment variables for your Turso db.
 
-     ```env
-     #Turso
-     TURSO_DB_URL=your_turso_db_url
-     TURSO_DB_TOKEN=your_turso_auth_token
-     ```
+      ```env
+      #Turso
+      TURSO_DB_URL=your_turso_db_url
+      TURSO_DB_TOKEN=your_turso_auth_token
+      ```
 
 5. **Run the development server.**
 
