@@ -54,11 +54,12 @@ watch(
     }
   },
 )
-if (!cachedResults?.value) {
+
+onMounted(async () => {
   await callOnce(async () => {
     $fetch('/api/cachedata')
   })
-}
+})
 </script>
 
 <template>
@@ -68,7 +69,8 @@ if (!cachedResults?.value) {
       Find the cheapest BTC
     </h1>
     <h2 class="text-xl font-bold text-center my-6">
-      1 BTC currently costs {{ btcPrice }} euros.
+      1 BTC currently costs
+      <span v-show="btcPrice"> {{ btcPrice }}</span> euros.
     </h2>
 
     <div class="flex justify-center mt-6">

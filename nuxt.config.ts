@@ -8,4 +8,10 @@ export default defineNuxtConfig({
       autoSubfolderIndex: false,
     },
   },
+
+  runtimeConfig: {
+    public: {
+      gtagId: process.env.GTAG_ID,
+    },
+  },
 })
