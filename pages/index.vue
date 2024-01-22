@@ -48,9 +48,11 @@ const results = computed(() => {
 watch(
   () => amount.value,
   async (newValue, oldValue) => {
-    if (newValue !== defaultAmount && newValue !== oldValue) {
-      isLoading.value = true
-      await debouncedUseOffers(newValue)
+    if (newValue.match(/^\d+$/)) {
+      if (newValue !== defaultAmount && newValue !== oldValue) {
+        isLoading.value = true
+        await debouncedUseOffers(newValue)
+      }
     }
   },
 )

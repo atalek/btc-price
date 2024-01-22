@@ -78,4 +78,5 @@ and Turso SQLite DB to cache initial results.
 
 Github: [@Amphei](https://github.com/Amphei) <br> Linkedin:
 [@Aleksandar Atanasovski](https://www.linkedin.com/in/aleksandar-atanasovski-16b123263/)
-<br> [Portfolio] (soon...)
+<br> Portfolio:
+[https://atal-portfolio.pages.dev/](https://atal-portfolio.pages.dev/)
