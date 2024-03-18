@@ -23,7 +23,7 @@ if (cachedResults) {
 
 const debouncedUseOffers = debounce(async (amount: string) => {
   const results = await useOffers(amount)
-  offerResults.value = results
+  offerResults.value = results as Results[]
   isLoading.value = false
 
   if (offerResults.value) {
@@ -58,9 +58,11 @@ watch(
 )
 
 onMounted(async () => {
-  await callOnce(async () => {
-    $fetch('/api/cachedata')
-  })
+  if (!cachedResults?.value) {
+    await callOnce(async () => {
+      $fetch('/api/cachedata')
+    })
+  }
 })
 </script>
 
