@@ -17,7 +17,7 @@ useHead({
         'bitcoin, btc, price, checker, cryptocurrency, crypto, blockchain, market, value, price tracker, live prices, real-time, market trends',
     },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://btc-price.pages.dev/' },
+    { property: 'og:url', content: 'https://btc-price.atalek.com/' },
     {
       property: 'og:title',
       content: 'Bitcoin Price Checker - Track BTC Prices with Ease',
@@ -36,7 +36,7 @@ useHead({
       property: 'twitter:card',
       content: 'summary_large_image',
     },
-    { property: 'twitter:url', content: 'https://btc-price.pages.dev/' },
+    { property: 'twitter:url', content: 'https://btc-price.atalek.com/' },
     {
       property: 'twitter:title',
       content: 'Bitcoin Price Checker - Track BTC Prices in Real-Time',

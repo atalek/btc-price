@@ -72,7 +72,7 @@ and Turso SQLite DB to cache initial results.
 
 ## Live Version
 
-[https://btc-price.pages.dev/](https://btc-price.pages.dev/)
+[https://btc-price.atalek.com/](https://btc-price.atalek.com/)
 
 ## Author
 
