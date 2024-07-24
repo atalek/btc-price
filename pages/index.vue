@@ -78,8 +78,7 @@ onMounted(async () => {
     </h2>
 
     <div class="flex justify-center mt-6">
-      <div
-        class="flex items-center bg-blue-950 border border-white/10 rounded-lg">
+      <div class="flex items-center bg-blue-950 border border-white/10 rounded-lg">
         <input
           type="text"
           class="border-white/10 bg-blue-950 p-2 border-0 w-36 pl-4 bg-transparent text-2xl outline-none"

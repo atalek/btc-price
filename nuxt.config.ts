@@ -14,4 +14,6 @@ export default defineNuxtConfig({
       gtagId: process.env.GTAG_ID,
     },
   },
+
+  compatibilityDate: '2024-07-24',
 })

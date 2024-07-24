@@ -14,17 +14,17 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "latest",
-    "@types/better-sqlite3": "^7.6.8",
+    "@types/better-sqlite3": "^7.6.11",
     "@types/lodash.debounce": "^4.0.9",
-    "drizzle-kit": "^0.20.13",
-    "nuxt": "^3.10.0",
-    "vue": "^3.3.8",
-    "vue-router": "^4.2.5"
+    "drizzle-kit": "^0.20.18",
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.33",
+    "vue-router": "^4.4.0"
   },
   "dependencies": {
     "@libsql/client": "0.4.0-pre.7",
-    "better-sqlite3": "^9.3.0",
-    "drizzle-orm": "^0.29.3",
+    "better-sqlite3": "^9.6.0",
+    "drizzle-orm": "^0.29.5",
     "lodash.debounce": "^4.0.8"
   }
 }
