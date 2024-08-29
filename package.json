@@ -17,9 +17,9 @@
     "@types/better-sqlite3": "^7.6.11",
     "@types/lodash.debounce": "^4.0.9",
     "drizzle-kit": "^0.20.18",
-    "nuxt": "^3.12.4",
-    "vue": "^3.4.33",
-    "vue-router": "^4.4.0"
+    "nuxt": "^3.13.0",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
   },
   "dependencies": {
     "@libsql/client": "0.4.0-pre.7",
